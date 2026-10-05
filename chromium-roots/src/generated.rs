@@ -117,15 +117,15 @@ const CERTIFICATE_114: &[u8] = b"0\x82\x05\x060\x82\x02\xEE\xA0\x03\x02\x01\x02\
 /// Chrome PKI Metadata component ID used for this snapshot.
 pub const SOURCE_COMPONENT_ID: &str = "efniojlnjndmcbiieegkicadnoecjjef";
 /// Chrome PKI Metadata component version used for this snapshot.
-pub const SOURCE_COMPONENT_VERSION: &str = "1759";
+pub const SOURCE_COMPONENT_VERSION: &str = "1798";
 /// Chrome Stable version used to request the component.
-pub const SOURCE_BROWSER_VERSION: &str = "152.0.7977.64";
+pub const SOURCE_BROWSER_VERSION: &str = "154.0.8037.97";
 /// SHA-256 of the verified CRX3 package.
-pub const SOURCE_CRX_SHA256: [u8; 32] = *b"J0\xC2T\x97\xC9\xE6T\xA8\xD7%\t\xE3\x9FnzHD\xDB\xE7\xC5p7\x9C\n\xC1\x8DU+\xAC1\x7F";
+pub const SOURCE_CRX_SHA256: [u8; 32] = *b"\xB7W\xD6y\xB1\x176\x11\"$\t\xA3\x95i\xE7\x912\xC2V:\x81\x1F\xDE\xF6\x13\x88Z!\xAEJ\xBDH";
 /// SHA-256 of the serialized root-store payload.
-pub const SOURCE_CRS_SHA256: [u8; 32] = *b"b|\xFC\xFE\x94\"\xC0HB\x92\x12\xCE\xA2\xE3\xFD.>6\xAA\xC2\xD4\x1E_\xE6\x83\xEB[\x8C\x14\x7F\xF5X";
+pub const SOURCE_CRS_SHA256: [u8; 32] = *b"\xF8\x9F\xC1,\0\x88\x04\xE5\xD4\x860o\xEB+\x85!\x06fZ\x14\xB30\x0B~\x86\x8E\xE9W\x8A\x82/X";
 /// Chrome Root Store major version used by this snapshot.
-pub const ROOT_STORE_VERSION: i64 = 39i64;
+pub const ROOT_STORE_VERSION: i64 = 40i64;
 /// Classical X.509 certificates trusted for TLS by this Root Store snapshot.
 ///
 /// Entries retain Chromium source order. Additional certificates are included
