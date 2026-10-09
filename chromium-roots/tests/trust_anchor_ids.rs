@@ -36,7 +36,7 @@ fn trust_anchor_id_metadata_matches_wire_encoding() {
         .filter_map(|anchor| anchor.trust_anchor_id)
         .collect::<Vec<_>>();
 
-    assert!(!decoded.is_empty());
+    assert_ne!(decoded, [] as [&[u8]; 0]);
 
     assert_eq!(mapped, decoded, "every published ID must map exactly once");
     assert_eq!(

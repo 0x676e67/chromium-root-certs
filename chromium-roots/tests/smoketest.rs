@@ -7,7 +7,7 @@ use chromium_roots::{TLS_SERVER_ROOT_CERTS, TLS_TRUST_ANCHORS};
 
 #[test]
 fn every_tls_root_is_a_valid_ca_and_webpki_anchor() {
-    assert!(!TLS_SERVER_ROOT_CERTS.is_empty());
+    assert_ne!(TLS_SERVER_ROOT_CERTS, []);
     assert_eq!(TLS_SERVER_ROOT_CERTS.len(), TLS_TRUST_ANCHORS.len());
 
     for (root, metadata) in TLS_SERVER_ROOT_CERTS.iter().zip(TLS_TRUST_ANCHORS) {

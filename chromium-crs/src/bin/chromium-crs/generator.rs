@@ -303,7 +303,7 @@ source = "https://clients2.google.com/service/update2/crx"
 
         assert!(generated.root_store_version > 0);
         assert!(generated.anchor_count > 0);
-        assert!(!generated.source.is_empty());
+        assert_ne!(generated.source, "");
     }
 
     #[test]
